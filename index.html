@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Teléfonos de los profesores</title>
+</head>
+
+<body>
+
+    <form method="post" id="formulario" target="_self">
+        <fieldset>
+            <legend>Nombre del profesor</legend>
+            <input type="text" name="nombreProfesor" autofocus />
+            <input type="button" id="buscar" value="buscar" />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Teléfonos de los profesores</legend>
+            <select id="profesores" name="profesores" size="5" onclick="devolverTelefono(this)"></select>
+            <p id="visor"></p>
+        </fieldset>
+    </form>
+    <script src="codigo.js"></script>
+</body>
+
+</html>
